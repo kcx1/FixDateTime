@@ -16,7 +16,7 @@ dependencies = [
 ]
 
 [project.scripts]
-fix_datetime= "fix_datetime:main"
+fix_datetime= "fix_date_time:main"
 
 [build-system]
 requires = [
