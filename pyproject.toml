@@ -27,6 +27,8 @@ requires = [
 where = ["src"]
 include = ["config*"]
 
+[tool.setuptools.package-dir]
+""="src"
 
 [project.scripts]
 fix_datetime= "fix_date_time:main"
