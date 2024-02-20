@@ -1,0 +1,32 @@
+[project]
+name = "fix_date_time"
+description = "Simple CLI to fix date time in excel files"
+version = "0.1.0"
+authors = [
+    { name = "Casey C", email = "kcx1codes@gmail.com" }
+]
+license = {file = "LICENSE"}
+readme = "README.md"
+requires-python = ">=3.9"
+
+dependencies = [
+    "openpyxl",
+    "pyarrow",
+    "pandas",
+]
+
+# [project.scripts]
+# checksum = "cli:entry_point"
+
+[build-system]
+requires = [
+    "setuptools >= 35.0.2",
+    "setuptools_scm >= 2.0.0, <3"
+]
+
+[tool.setuptools.packages]
+find = {}  # Scanning implicit namespaces is active by default
+
+[tool.black]
+line-length = 120
+target-version = ['py37', 'py38']
