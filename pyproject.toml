@@ -25,7 +25,10 @@ requires = [
 ]
 
 [tool.setuptools.packages]
-find = {}  # Scanning implicit namespaces is active by default
+find = {
+    include = ["fix_date_time*"]
+    namespaces = false
+}  # Scanning implicit namespaces is active by default
 
 [tool.black]
 line-length = 120
