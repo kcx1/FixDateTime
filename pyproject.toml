@@ -31,7 +31,7 @@ include = ["config*"]
 ""="src"
 
 [project.scripts]
-fix_datetime= "fix_date_time:main"
+fix_datetime= "fix_date_time.fix_date_time:main"
 
 [tool.black]
 line-length = 120
