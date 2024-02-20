@@ -24,11 +24,9 @@ requires = [
     "setuptools_scm >= 2.0.0, <3"
 ]
 
-[tool.setuptools.packages]
-find = {
-    include = ["fix_date_time*"]
-    namespaces = false
-}  # Scanning implicit namespaces is active by default
+[tool.setuptools.packages.find]
+include = ["fix_date_time*"]
+namespaces = false
 
 [tool.black]
 line-length = 120
