@@ -1,5 +1,5 @@
 [project]
-name = "fix_date_time"
+name = "fix_datetime"
 description = "Simple CLI to fix date time in excel files"
 version = "0.1.0"
 authors = [
