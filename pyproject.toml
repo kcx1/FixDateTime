@@ -7,7 +7,7 @@ authors = [
 ]
 license = {file = "LICENSE"}
 readme = "README.md"
-requires-python = ">=3.9"
+requires-python = ">=3.11"
 
 dependencies = [
     "openpyxl",
@@ -15,8 +15,8 @@ dependencies = [
     "pandas",
 ]
 
-# [project.scripts]
-# checksum = "cli:entry_point"
+[project.scripts]
+fix_datetime= "fix_datetime:main"
 
 [build-system]
 requires = [

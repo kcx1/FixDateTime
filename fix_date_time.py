@@ -15,36 +15,10 @@ class TermColors:
     END = "\033[0m"
 
 
-toml_example = f"""
-If you would like to create a custom config file, please create a 'config.toml' file in your home directory. Or simply add the '-c path/to/config.toml' argument. See the following example:
-
-Example Config:
-
-    [config]
-        columns = [
-            {TermColors.GRAY}#  Add any additional columns that you would like to fix here.{TermColors.END}
-            "First Discovered",
-        ]
-        {TermColors.GRAY}#  This is the format of the existing file:{TermColors.END}
-        in_format =  "%b %d, %Y %H:%M:%S %Z"
-        {TermColors.GRAY}#  This is the format that we would like to change it to:{TermColors.END}
-        out_format = "%d %b %y"  
-
-
-
-# Get more format codes here:
-    {TermColors.CYAN}
-    # https://docs.python.org/3/library/datetime.html#strftime-and-strptime-format-codes
-    {TermColors.END}
-
-"""
-
-
 parser = argparse.ArgumentParser(
     prog="Fix Date / Time", 
     description="Command line tool to fix date/time in an excel file.",
     formatter_class=argparse.RawDescriptionHelpFormatter,
-    epilog=toml_example
 )
 
 parser.add_argument(
