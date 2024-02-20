@@ -1,16 +1,45 @@
 # Fix Date Time:
 Simple script to let you change the datetime of an entire column in one or more excel spreadsheets. 
 
-### Installation
+## Installation
 
-##### Windows .exe
+### Windows .exe
 You can simply download the fix_datetime.exe from this repository's release page. 
 
-##### Pip
+### Pip
+
+>[!Note]
+>Assuming you have a working version of python and pip installed.
+
+It is recommended that you use a virtual python environment to install this:
+
+```bash
+pip install git+https://github.com/kcx1/FixDateTime
+```
+
+From here you can just call it from the command line like:
+
+```bash
+fix_datetime [args]
+```
+
+### From python
+Start by cloning the repo:
+```bash
+git clone https://github.com/kcx1/FixDateTime
+cd FixDateTime
+pip install -r requirements.txt
+```
+
+Now you can run this from the command line:
+
+```bash
+python /path/to/FixDateTime/fix_date_time/fix_date_time.py [args]
+```
 
 
 
-### Using it
+## Using it
 
 
 
