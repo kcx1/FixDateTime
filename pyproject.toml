@@ -15,8 +15,6 @@ dependencies = [
     "pandas",
 ]
 
-[project.scripts]
-fix_datetime= "fix_date_time:main"
 
 [build-system]
 requires = [
@@ -24,9 +22,14 @@ requires = [
     "setuptools_scm >= 2.0.0, <3"
 ]
 
+
 [tool.setuptools.packages.find]
-include = ["fix_date_time*"]
-namespaces = false
+where = ["src"]
+include = ["config*"]
+
+
+[project.scripts]
+fix_datetime= "fix_date_time:main"
 
 [tool.black]
 line-length = 120
