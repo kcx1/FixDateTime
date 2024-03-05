@@ -42,9 +42,12 @@ python /path/to/FixDateTime/fix_date_time/fix_date_time.py [args]
 ## Using it
 
 
+#### **UPDATED**
+When you run this script - it will first look for a ```FixDateTime.toml``` in the XDG_CONFIG_HOME (if set) or in the user's home directory. If it finds a config file - it will use that config. Otherwise it will copy the builtin config over to that directory to either home or XDG_CONFIG_HOME (if set)
 
+You can still pass an alternate config using the commandline argument. Simply add the '-c path/to/config.toml' argument. 
 
-If you would like to create a custom config file, please create a 'config.toml' file in your home directory. Or simply add the '-c path/to/config.toml' argument. See the following example:
+The following example shows the builtin config:
 
 Example Config:
 ```toml
@@ -54,7 +57,7 @@ Example Config:
     ]
     
     in_format =  "%b %d, %Y %H:%M:%S %Z"    # This is the format of the existing date time
-    out_format = "%d %b %y"                 # This is the format that we would like to change it to
+    out_format = "%d-%b-%y"                 # This is the format that we would like to change it to
 ```
 
 
